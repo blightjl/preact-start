@@ -1,0 +1,21 @@
+---
+import ProfilePicture from '../components/ProfilePicture.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Me">
+	<h1 class="visually-hidden">Contact Me</h1>
+	<div class="contact">
+		<ProfilePicture />
+	</div>
+</Layout>
+
+<style>
+	.contact {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 75px 0;
+	}
+</style>

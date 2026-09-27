@@ -1,0 +1,13 @@
+{
+  "route": "/contact-me",
+  "source": "src/pages/contact-me.tsx",
+  "title": "Home Page",
+  "text": [],
+  "links": [],
+  "images": [
+    {
+      "src": "src/images/profile_picture.webp",
+      "alt": "Josan's Profile Picture"
+    }
+  ]
+}

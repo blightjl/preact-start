@@ -1,0 +1,43 @@
+.profileImage {
+	height: 250px;
+	width: 250px;
+	object-fit: cover;
+}
+
+.profilePicture {
+	height: 300px;
+	width: 300px;
+	margin-left: 25px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profilePictureShade {
+	height: 300px;
+	width: 300px;
+	background-color: #4b4747;
+}
+
+@media (max-width: 640px) {
+	.profileImage {
+		height: 200px;
+		width: 200px;
+	}
+
+	.profilePicture,
+	.profilePictureShade {
+		height: 240px;
+		width: 240px;
+	}
+
+	.profilePicture {
+		margin-left: 20px;
+	}
+
+	/* Keep the offset black frame inside the viewport. */
+	.profilePictureShade {
+		margin-right: 20px;
+	}
+}

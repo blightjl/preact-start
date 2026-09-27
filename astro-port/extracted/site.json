@@ -1,0 +1,55 @@
+{
+  "siteMetadata": {
+    "title": "Josan's Portfolio",
+    "siteUrl": "https://www.yourdomain.tld"
+  },
+  "fonts": [
+    "Italiana"
+  ],
+  "routes": [
+    {
+      "route": "/404",
+      "title": "Not found",
+      "source": "src/pages/404.tsx"
+    },
+    {
+      "route": "/certificates",
+      "title": "Certificates",
+      "source": "src/pages/certificates.tsx"
+    },
+    {
+      "route": "/contact-me",
+      "title": "Home Page",
+      "source": "src/pages/contact-me.tsx"
+    },
+    {
+      "route": "/",
+      "title": "Home",
+      "source": "src/pages/index.tsx"
+    },
+    {
+      "route": "/navbar",
+      "title": null,
+      "source": "src/pages/navbar.tsx"
+    },
+    {
+      "route": "/projects",
+      "title": "Projects",
+      "source": "src/pages/projects.tsx"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "ABOUT ME",
+      "to": "/"
+    },
+    {
+      "label": "PROJECTS",
+      "to": "/projects"
+    },
+    {
+      "label": "CERTIFICATES",
+      "to": "/certificates"
+    }
+  ]
+}

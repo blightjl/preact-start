@@ -1,0 +1,14 @@
+{
+  "route": "/projects",
+  "source": "src/pages/projects.tsx",
+  "title": "Projects",
+  "text": [
+    {
+      "tag": "main",
+      "text": "{data.allFile.nodes.map((node) => (\n<Project key={node.childMdx.frontmatter.title} projectInfo={{ title: node.childMdx.frontmatter.title, year: new Date(node.childMdx.frontmatter.date).getFullYear(), link: node.childMdx.frontmatter.link, technologies: node.childMdx.frontmatter.technologies, description: node.childMdx.body }} />\n))}",
+      "dynamic": true
+    }
+  ],
+  "links": [],
+  "images": []
+}

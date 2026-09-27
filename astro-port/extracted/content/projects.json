@@ -1,0 +1,151 @@
+[
+  {
+    "slug": "2021project1",
+    "source": "projects/2021project1.mdx",
+    "title": "Smash Bro Game",
+    "date": "2021-05-01",
+    "year": 2021,
+    "technologies": [
+      "Unity",
+      "C#"
+    ],
+    "link": "blightl",
+    "body": "A 2d platformer that had multiple playable characters in a smash bros-like game. With Unity handled smooth animation and various components of the game details: such as healthbars, the graphics attached to each object. How projectiles would animate out from the characters, melee attacks, and the networking part of Unity with Photon Networking."
+  },
+  {
+    "slug": "2022project1",
+    "source": "projects/2022project1.mdx",
+    "title": "Image Processor",
+    "date": "2022-12-01",
+    "year": 2022,
+    "technologies": [
+      "Java"
+    ],
+    "link": "blightl",
+    "body": "Developed a robust Java CLI program with modular classes that was able to process images into various different filters. Such as mosaic filter, and black-and-white. After completing the underlying CLI program, used the JavaFX library to for a GUI that displayed the RGB components along with histograms to for each image that was processed."
+  },
+  {
+    "slug": "2023project1",
+    "source": "projects/2023project1.mdx",
+    "title": "HedgeFollow Sweeper",
+    "date": "2023-08-01",
+    "year": 2023,
+    "technologies": [
+      "Python",
+      "Cron"
+    ],
+    "link": "blightl",
+    "body": "Developed a web scraper for hedgefollow.com using Python, leveraging BeautifulSoup, Selenium, requests, regular expressions, and CSS selectors. The scraper extracted data from the past 24 hours and stored it in JSON format for further analysis. This data was used to identify the greatest stock changes and percentage shifts among insiders. Using the Twitter API and cron jobs, I automated tweets to report the insiders with the largest portfolio movements in terms of magnitude and percentage when compared to all other insiders for the given time period. I also handled various edge cases as the project progressed, such as for instance, modifying the cron job to prevent it from running on weekends and ensuring smooth functionality throughout the project."
+  },
+  {
+    "slug": "2023project2",
+    "source": "projects/2023project2.mdx",
+    "title": "Chatroom + Packet Sniffer",
+    "date": "2023-12-25",
+    "year": 2023,
+    "technologies": [
+      "Java"
+    ],
+    "link": "blightl",
+    "body": "Part I:\n\nAs it was my first time socket programming, there was a lot of learning to do such as learning what IP addresses, ports, and how data were handled at each node. It was great to see real world application of programming concepts I had learned in class bring to life a chatroom, via a ‘server’ and ‘clients’. I used Java’s interfaces, abstractions, and enums. I was able to easily create an interface with modularity in mind for scalability and rigidity to handle different types of encryptions and their respective operations where appropriate. A flaw introduced in this project was the key that was used to encrypt and decrypt messages among the clients in the network. This meant that with a packet sniffer it would be easy to simply intercept the key and use it to gain unauthorized access to the messages between clients in the network. This is exactly what will be investigated in Part II.        \n\nPart II:\n\nAn existing packet capture library called Jpcap was already available in Java. Therefore, I used this library in the chatroom I created in Part I by configuring it through a pom.xml file and Maven. I learned to look through the Jpcap documentation to find relevant functions to intercept messages sent through plain text in the network. After extending the program a bit more, the Initial Vector and Decryption Key could also be intercepted in the network as I knew the implementation of the chatroom system. Further filtering and conversions in the data stream had to be made to make the program run smoothly."
+  },
+  {
+    "slug": "2023project3",
+    "source": "projects/2023project3.mdx",
+    "title": "Distributed Key-Value Store",
+    "date": "2023-11-25",
+    "year": 2023,
+    "technologies": [
+      "Python"
+    ],
+    "link": "blightl",
+    "body": "A key-value pair data storage that was resilient against network failures that kept logs up-to-date and in order. The underlying protocol to handle this replication was the RAFT protocol by Diego Ongaro and John Ousterhout."
+  },
+  {
+    "slug": "2024project1",
+    "source": "projects/2024project1.mdx",
+    "title": "Secure Peer-to-Peer Messaging",
+    "date": "2024-05-01",
+    "year": 2024,
+    "technologies": [
+      "Python",
+      "Cryptography",
+      "Socket"
+    ],
+    "link": "blightl",
+    "body": "Utilized primitive cryptographic features from the pyca/cryptography library for python to implement a secure environment where clients are able to authenticate to a server and via this authentication, the clients are able to securely message other authenticated users."
+  },
+  {
+    "slug": "2024project2",
+    "source": "projects/2024project2.mdx",
+    "title": "QConnect",
+    "date": "2024-12-01",
+    "year": 2024,
+    "technologies": [
+      "MongoDB",
+      "React",
+      "Express.js",
+      "Node.js"
+    ],
+    "link": "blightjl",
+    "body": "Gained full experience working on a full-stack application with a team of software engineering engaging in each part of the software development life cycle via the AGILE framework. Using collaboration and iterative development, we ensured effective communication and adaptability throughout each sprint, enabling our team of four to respond dynamically to meet each sprint needs and moditifications. I prototyped visually appealing interfaces using Figma and brought them to life by implementing the designs with React, creating an interactive and user-friendly front-end. On the back-end, I developed a robust Node.js server with RESTful API integration, ensuring seamless functionality across all endpoints. To streamline the development process, I configured a CI/CD pipeline using Render, MongoDB, and GitHub, which allowed for efficient deployment and testing. This hands-on experience in end-to-end application development culminated the creation of a fully functional community web application that demonstrates both scalability and practical efficacy."
+  },
+  {
+    "slug": "2024project3",
+    "source": "projects/2024project3.mdx",
+    "title": "Portfolio v1",
+    "date": "2024-07-01",
+    "year": 2024,
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "link": "blightjl",
+    "body": "A lightweight portfolio to demonstrate some of my projects in more detail and function as an archive."
+  },
+  {
+    "slug": "2024project4",
+    "source": "projects/2024project4.mdx",
+    "title": "UniSwap",
+    "date": "2024-05-15",
+    "year": 2024,
+    "technologies": [
+      "MongoDB",
+      "React",
+      "Express.js",
+      "Node.js"
+    ],
+    "link": "blightjl",
+    "body": "A full-stack web application using the MERN tech stack to simulate an online thrift store."
+  },
+  {
+    "slug": "2024project5",
+    "source": "projects/2024project5.mdx",
+    "title": "Canvas Clone",
+    "date": "2024-04-18",
+    "year": 2024,
+    "technologies": [
+      "MongoDB",
+      "React",
+      "Express.js",
+      "Node.js"
+    ],
+    "link": "blightjl",
+    "body": "Used the MERN tech stack to create a full stack project that created a clone of popular education platform. Learned to use states to keep the application handle importants states throughout the web app through React and Redux. User account creation and session handling was done via ExpressJS."
+  },
+  {
+    "slug": "2025project1",
+    "source": "projects/2025project1.mdx",
+    "title": "Portfolio v2",
+    "date": "2025-03-17",
+    "year": 2025,
+    "technologies": [
+      "Gatsby",
+      "TypeScript",
+      "GraphQL"
+    ],
+    "link": "blightjl",
+    "body": "An updated portfolio from Portfolio v1 with modernized visuals."
+  }
+]

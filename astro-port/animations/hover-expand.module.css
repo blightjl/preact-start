@@ -1,0 +1,40 @@
+/*
+ * Hover-expand animation (extracted from the projects section).
+ *
+ * A container sits at a collapsed height and grows to an expanded height on
+ * hover, revealing any children marked with `.reveal`.
+ *
+ * Usage (React / any bundler with CSS Modules):
+ *   import * as expand from './hover-expand.module.css';
+ *   <div className={expand.container}>
+ *     <h3>Always visible</h3>
+ *     <p className={expand.reveal}>Shown on hover</p>
+ *   </div>
+ *
+ * Tune per instance by overriding the custom properties, e.g.
+ *   style={{ '--expand-collapsed-height': '80px' }}
+ */
+
+.container {
+    --expand-collapsed-height: 100px;
+    --expand-expanded-height: 400px;
+    --expand-duration: 0.75s;
+    --expand-easing: ease;
+
+    height: var(--expand-collapsed-height);
+    overflow: hidden;
+    cursor: pointer;
+    transition: height var(--expand-duration) var(--expand-easing);
+}
+
+.container:hover {
+    height: var(--expand-expanded-height);
+}
+
+.reveal {
+    display: none;
+}
+
+.container:hover .reveal {
+    display: block;
+}

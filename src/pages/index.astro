@@ -1,0 +1,47 @@
+---
+import ProfilePicture from '../components/ProfilePicture.astro';
+import Layout from '../layouts/Layout.astro';
+import styles from '../styles/pages/index.module.css';
+---
+
+<Layout title="Home">
+	<h1 class="visually-hidden">About me</h1>
+	<div class={styles.aboutMeContent}>
+		<section class={styles.contentOne}>
+			<div class={styles.leftDisplay}>
+				<ProfilePicture />
+			</div>
+			<div class={styles.rightDisplay}>
+				<div class={styles.rightContent}>
+					<p>
+						Here’s my go at a portfolio!<br />
+						How is it? Whatever your<br />
+						answer is I hope you<br />
+						have learned a<br />
+						little more<br />
+						about<br />
+						me.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<p class={styles.contentTwo}>Now here's some more!</p>
+
+		<section class={styles.contentThree}>
+			<div class={styles.rightContent}>
+				<p>
+					I think technology and Computer Science is pretty cool as you may have guessed?.
+				</p>
+				<p>
+					I enjoy [or rather enjoyed] playing gamed. I am proud to say I am one of the few
+					ex-League players who have gotten out of the addiction.
+				</p>
+				<p>
+					Besides this I enjoy studying and working on personal projects at the public library or a
+					nearby café.
+				</p>
+			</div>
+		</section>
+	</div>
+</Layout>

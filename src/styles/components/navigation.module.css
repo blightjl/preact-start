@@ -1,0 +1,40 @@
+/* Navbar */
+.navbar {
+	width: 100%;
+}
+
+.navbar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: white;
+}
+
+.navbarBanner {
+	background: #4b4747;
+	color: white;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-italiana);
+	font-size: 225%;
+}
+
+@media (max-width: 640px) {
+	.navbarBanner {
+		height: 72px;
+		font-size: 125%;
+	}
+}

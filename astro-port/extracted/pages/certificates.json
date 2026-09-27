@@ -1,0 +1,8 @@
+{
+  "route": "/certificates",
+  "source": "src/pages/certificates.tsx",
+  "title": "Certificates",
+  "text": [],
+  "links": [],
+  "images": []
+}

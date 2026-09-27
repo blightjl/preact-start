@@ -1,0 +1,43 @@
+{
+  "source": "src/components/project.tsx",
+  "title": null,
+  "text": [
+    {
+      "tag": "span",
+      "text": "{projectInfo.title}",
+      "className": "{classNames(styles.projectTitle, styles.left)}",
+      "dynamic": true
+    },
+    {
+      "tag": "span",
+      "text": "{projectInfo.year}",
+      "className": "{classNames(styles.projectTitle, styles.right)}",
+      "dynamic": true
+    },
+    {
+      "tag": "div",
+      "text": "{projectInfo.description}",
+      "className": "{classNames(styles.additionalContent, expand.reveal, styles.projectDescription)}",
+      "dynamic": true
+    },
+    {
+      "tag": "div",
+      "text": "TECH STACK USED: {projectInfo.technologies.join(\", \")}",
+      "className": "{classNames(styles.additionalContent, expand.reveal, styles.left)}",
+      "dynamic": true
+    },
+    {
+      "tag": "a",
+      "text": "GITHUB",
+      "className": "{classNames(styles.additionalContent, expand.reveal, styles.right)}"
+    }
+  ],
+  "links": [
+    {
+      "label": "GITHUB",
+      "href": "{projectInfo.link}",
+      "target": "_blank"
+    }
+  ],
+  "images": []
+}

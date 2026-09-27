@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from 'astro:content';
+import Project from '../components/Project';
+import Layout from '../layouts/Layout.astro';
+
+const projects = (await getCollection('projects')).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const entries = await Promise.all(
+	projects.map(async (project) => ({ project, Content: (await render(project)).Content })),
+);
+---
+
+<Layout title="Projects">
+	<h1 class="visually-hidden">Projects</h1>
+	<div class="projects">
+		{
+			entries.map(({ project, Content }) => (
+				<Project
+					title={project.data.title}
+					year={project.data.year}
+					technologies={project.data.technologies}
+					link={project.data.link}
+				>
+					<Content />
+				</Project>
+			))
+		}
+	</div>
+</Layout>
+
+<style>
+	.projects {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 24px 0 64px;
+	}
+</style>

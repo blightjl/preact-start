@@ -1,0 +1,87 @@
+.aboutMeContent {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentOne {
+    padding-top: 75px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentTwo {
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+    width: 100%;
+    font-family: 'Italiana', serif;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentThree {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35vh;
+}
+
+.leftDisplay {
+    height: 300px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.leftContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightDisplay {
+    height: 300px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+.rightContent {
+    display: flex;
+    align-items: center;
+    font-family: 'Italiana', serif;
+    font-size: 200%;
+}
+
+.profileImage {
+    height: 250px;
+    width: 250px;
+}
+
+.profilePicture {
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePictureShade {
+    height: 300px;
+    width: 300px;
+    background-color: #4B4747;
+}
+

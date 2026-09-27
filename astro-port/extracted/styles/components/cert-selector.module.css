@@ -1,0 +1,101 @@
+/* Certificates */
+.certificates {
+    width: 100%;
+    z-index: 10;
+}
+
+.certificates ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.certificates li {
+    font-family: 'Italiana', serif;
+    font-size: 225%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.certificates a {
+    width: 100%;
+}
+
+/* Underline effects */
+.certificates a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    text-shadow: 0.8px 0.8px rgb(234, 225, 225);
+    opacity: 50%;
+    height: 100%;
+    padding-left: 20px;
+    /* background-color: black; */
+}
+
+.certificates a:hover {
+    transition: opacity 500ms, transform 500ms;
+    text-shadow: 2px 2px rgb(255, 73, 255);
+    transform: scale(1.05);
+}
+
+.certificates a:hover,
+.certificates a:focus,
+.certificates a.active {
+    opacity: 100%;
+    text-shadow: 4px 4px rgb(255, 0, 255);
+    transition: text-shadow 0.7s ease, transform 0.7s ease;
+}
+
+/* Position the '<' and '>' symbols */
+.certificates span {
+    position: relative;
+}
+
+.certificates span::before {
+    content: '<';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    opacity: 0;
+    transition: opacity 300ms, transform 400ms;
+    transform: translateY(-50%) translateX(-100%);
+}
+
+.certificates span::after {
+    content: '>';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    opacity: 0;
+    transition: opacity 300ms, transform 400ms;
+    transform: translateY(-50%) translateX(100%);
+}
+
+/* Hover effect for <a> */
+.certificates a:hover span::before,
+.certificates a:hover span::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+    transition: opacity 150ms, transform 300ms;
+}
+
+/* Active effect for <span> */
+.certificates span.active::before,
+.certificates span.active::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+    transition: opacity 150ms, transform 300ms;
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "certificate1",
+    "source": "certificates/certificate1.mdx",
+    "issuer": "CompTIA Security+",
+    "dateAcquired": "07/19/2024",
+    "expirationDate": "07/19/2027",
+    "link": "https://www.credly.com/badges/45e11fe9-ffb9-4f0b-82a6-57b7b96af190/public_url",
+    "body": "This is my Network+ certificate."
+  },
+  {
+    "slug": "certificate2",
+    "source": "certificates/certificate2.mdx",
+    "issuer": "CompTIA Network+",
+    "dateAcquired": "06/20/24",
+    "expirationDate": "07/19/2027",
+    "link": "https://www.credly.com/badges/0e00b37b-f289-46ba-99b8-1ca0ecce4839/public_url",
+    "body": "This is my Network+ certificate."
+  },
+  {
+    "slug": "certificate3",
+    "source": "certificates/certificate3.mdx",
+    "issuer": "AWS Cloud Certified Practitioner",
+    "dateAcquired": "N/A",
+    "expirationDate": "N/A",
+    "link": "N/A",
+    "body": "This is my AWS certificate."
+  },
+  {
+    "slug": "certificate4",
+    "source": "certificates/certificate4.mdx",
+    "issuer": "Certified Cisco Network Associate",
+    "dateAcquired": "N/A",
+    "expirationDate": "N/A",
+    "link": "N/A",
+    "body": "This is my CCNA certificate."
+  }
+]

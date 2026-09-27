@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+import profilePicture from '../assets/images/profile_picture.webp';
+import styles from '../styles/components/profile-picture.module.css';
+---
+
+<div class={styles.profilePictureShade}>
+	<div class={styles.profilePicture}>
+		<Image
+			src={profilePicture}
+			alt="Josan's Profile Picture"
+			class={styles.profileImage}
+			width={250}
+			height={250}
+			densities={[1, 2]}
+			loading="eager"
+		/>
+	</div>
+</div>

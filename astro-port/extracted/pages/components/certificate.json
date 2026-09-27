@@ -1,0 +1,39 @@
+{
+  "source": "src/components/certificate.tsx",
+  "title": null,
+  "text": [
+    {
+      "tag": "div",
+      "text": "ISSUER: {certificateInfo.issuer}",
+      "dynamic": true
+    },
+    {
+      "tag": "div",
+      "text": "DATE ACQUIRED: {certificateInfo.dateAcquired}",
+      "dynamic": true
+    },
+    {
+      "tag": "div",
+      "text": "EXPIRATION DATE: {certificateInfo.expirationDate}",
+      "dynamic": true
+    },
+    {
+      "tag": "div",
+      "text": "CREDENTIAL: {certificateInfo.credentialLink !== 'N/A' ? (\n<a\nhref={certificateInfo.credentialLink}\ntarget=\"_blank\"\nrel=\"noopener noreferrer\" >\n{certificateInfo.credentialLink}\n</a>\n) : (\n'N/A'\n)}",
+      "dynamic": true
+    },
+    {
+      "tag": "a",
+      "text": "{certificateInfo.credentialLink}",
+      "dynamic": true
+    }
+  ],
+  "links": [
+    {
+      "label": "{certificateInfo.credentialLink}",
+      "href": "{certificateInfo.credentialLink}",
+      "target": "_blank"
+    }
+  ],
+  "images": []
+}

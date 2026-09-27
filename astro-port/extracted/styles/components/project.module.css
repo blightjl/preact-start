@@ -1,0 +1,53 @@
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+    width: 90%;
+    border-bottom: 2px solid #ccc;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projectTitle {
+    margin: 0;
+    padding: 0;
+    font-family: 'Italiana', serif;
+    font-size: 200%;
+}
+
+.left {
+    padding-left: 10%;
+}
+
+.right {
+    padding-right: 10%;
+}
+
+.additionalContent {
+    padding: 10px;
+    text-align: center;
+}
+
+.additionalContent.left {
+    padding-left: 10%;
+}
+
+.additionalContent.right {
+    padding-right: 10%;
+}
+
+.projectDescription {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Italiana', serif;
+    font-size: 150%;
+    max-height: 300px;
+    overflow-y: auto;
+}

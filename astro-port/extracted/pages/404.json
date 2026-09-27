@@ -1,0 +1,31 @@
+{
+  "route": "/404",
+  "source": "src/pages/404.tsx",
+  "title": "Not found",
+  "text": [
+    {
+      "tag": "h1",
+      "text": "Page not found"
+    },
+    {
+      "tag": "p",
+      "text": "Sorry 😔, we couldn’t find what you were looking for.\n{process.env.NODE_ENV === \"development\" ? (\n<>\n<br />\nTry creating a page in <code style={codeStyles}>src/pages/</code>.\n<br />\n</>\n) : null}\n.",
+      "dynamic": true
+    },
+    {
+      "tag": "code",
+      "text": "src/pages/"
+    },
+    {
+      "tag": "Link",
+      "text": "Go home"
+    }
+  ],
+  "links": [
+    {
+      "label": "Go home",
+      "to": "/"
+    }
+  ],
+  "images": []
+}

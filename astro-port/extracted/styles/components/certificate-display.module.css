@@ -1,0 +1,36 @@
+
+.displayCertificates {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: rgb(86, 244, 86); */
+}
+
+.leftDisplay {
+    height: 500px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.rightDisplay {
+    height: 500px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: 100%;
+    /* Adjust based on your card size */
+    height: 100%;
+    /* Adjust based on your card size */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

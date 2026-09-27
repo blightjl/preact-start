@@ -1,0 +1,29 @@
+{
+  "route": "/",
+  "source": "src/pages/index.tsx",
+  "title": "Home",
+  "text": [
+    {
+      "tag": "div",
+      "text": "Here’s my go at a portfolio!\nHow is it? Whatever your\nanswer is I hope you\nhave learned a\nlittle more\nabout\nme.",
+      "className": "{styles.rightContent}"
+    },
+    {
+      "tag": "div",
+      "text": "Now here's some more!",
+      "className": "{styles.contentTwo}"
+    },
+    {
+      "tag": "div",
+      "text": "I think technology and Computer Science is pretty cool as you may have guessed?.\n\nI enjoy [or rather enjoyed] playing gamed. I am proud to say I am one of the few ex-League players who have gotten out of the addiction.\n\nBesides this I enjoy studying and working on personal projects at the public library or a nearby café.",
+      "className": "{styles.rightContent}"
+    }
+  ],
+  "links": [],
+  "images": [
+    {
+      "src": "src/images/profile_picture.webp",
+      "alt": "Josan's Profile Picture"
+    }
+  ]
+}

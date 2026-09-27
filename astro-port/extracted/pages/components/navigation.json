@@ -1,0 +1,33 @@
+{
+  "source": "src/components/navigation.tsx",
+  "title": null,
+  "text": [
+    {
+      "tag": "Link",
+      "text": "ABOUT ME"
+    },
+    {
+      "tag": "Link",
+      "text": "PROJECTS"
+    },
+    {
+      "tag": "Link",
+      "text": "CERTIFICATES"
+    }
+  ],
+  "links": [
+    {
+      "label": "ABOUT ME",
+      "to": "/"
+    },
+    {
+      "label": "PROJECTS",
+      "to": "/projects"
+    },
+    {
+      "label": "CERTIFICATES",
+      "to": "/certificates"
+    }
+  ],
+  "images": []
+}

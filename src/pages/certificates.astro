@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import type { CertificateInfo } from '../components/Certificate';
+import CertificateDisplay from '../components/CertificateDisplay';
+import Layout from '../layouts/Layout.astro';
+
+const certificates: CertificateInfo[] = (await getCollection('certificates'))
+	.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }))
+	.map(({ id, data }) => ({
+		id,
+		issuer: data.issuer,
+		dateAcquired: data.dateAcquired,
+		expirationDate: data.expirationDate,
+		credentialLink: data.link,
+	}));
+---
+
+<Layout title="Certificates">
+	<h1 class="visually-hidden">Certificates</h1>
+	<CertificateDisplay client:load certificates={certificates} />
+</Layout>

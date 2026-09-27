@@ -1,0 +1,8 @@
+{
+  "route": "/navbar",
+  "source": "src/pages/navbar.tsx",
+  "title": null,
+  "text": [],
+  "links": [],
+  "images": []
+}

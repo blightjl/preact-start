@@ -1,0 +1,19 @@
+{
+  "source": "src/components/cert-selector.tsx",
+  "title": null,
+  "text": [
+    {
+      "tag": "ul",
+      "text": "{certificateNames.map((name: string) => (\n<li key={name}>\n<a\nclassName={currentCertificateId === name ? `${styles.active}` : ''}\nstyle={{ cursor: \"pointer\" }}\nonClick={() => setNewCertificateId(CERTIFICATE[getEnumByValue(name)])}\n>\n<span\nclassName={currentCertificateId === name ? `${styles.active}` : ''}\n>\n{name}\n</span>\n</a>\n</li>\n))}",
+      "dynamic": true
+    },
+    {
+      "tag": "span",
+      "text": "{name}",
+      "className": "{currentCertificateId === name ? `${styles.active}` : ''}",
+      "dynamic": true
+    }
+  ],
+  "links": [],
+  "images": []
+}
