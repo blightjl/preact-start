@@ -1,0 +1,7 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	// Must match the Cloudflare Pages project name.
+	"name": "josan-portfolio",
+	"compatibility_date": "2026-09-27",
+	"pages_build_output_dir": "./dist"
+}

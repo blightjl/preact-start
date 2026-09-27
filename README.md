@@ -33,3 +33,14 @@ Project `link` and certificate `link` must be full `https://` URLs; anything els
 | `npm run dev`     | Starts local dev server at `localhost:4321` |
 | `npm run build`   | Builds the production site to `./dist/`     |
 | `npm run preview` | Previews the build locally                  |
+| `npm run deploy`  | Builds and uploads `dist/` to Cloudflare Pages |
+
+## Deploying to Cloudflare Pages
+
+The site is fully static, so no adapter is needed. Pages serves `dist/404.html` for unknown routes
+and applies `public/_headers` (long-lived caching for `/_astro/*`).
+
+- **From the CLI:** `npx wrangler login` once, then `npm run deploy`. If the project doesn't exist yet, wrangler
+  offers to create `josan-portfolio` (the `name` in `wrangler.jsonc`).
+- **From Git:** in the Cloudflare dashboard, create a Pages project from the repo with build command
+  `npm run build` and output directory `dist`. `.node-version` pins Node 22 for the build.
